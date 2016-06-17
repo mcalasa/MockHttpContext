@@ -11,6 +11,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MockHttpContext.MVC.Tests",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MockHttpContext.MVC", "MockHttpContext.MVC\MockHttpContext.MVC.csproj", "{BBEABE2C-13ED-484A-B6F9-A218EA446C81}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MockHttpContext.WebForm", "MockHttpContext.WebForm\MockHttpContext.WebForm.csproj", "{D68DCFF4-6C0D-4E19-8069-6C35D4A1E1A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MockHttpContext.WebForm.Tests", "MockHttpContext.WebForm.Tests\MockHttpContext.WebForm.Tests.csproj", "{F92119DA-63E6-4BE0-94FD-A6001B4D4A11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MockHttpContext.WebForm.Presenters", "MockHttpContext.WebForm.Presenters\MockHttpContext.WebForm.Presenters.csproj", "{37576C67-7712-465B-AC7D-0B5B9342868D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +39,18 @@ Global
 		{BBEABE2C-13ED-484A-B6F9-A218EA446C81}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BBEABE2C-13ED-484A-B6F9-A218EA446C81}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BBEABE2C-13ED-484A-B6F9-A218EA446C81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D68DCFF4-6C0D-4E19-8069-6C35D4A1E1A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D68DCFF4-6C0D-4E19-8069-6C35D4A1E1A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D68DCFF4-6C0D-4E19-8069-6C35D4A1E1A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D68DCFF4-6C0D-4E19-8069-6C35D4A1E1A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F92119DA-63E6-4BE0-94FD-A6001B4D4A11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F92119DA-63E6-4BE0-94FD-A6001B4D4A11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F92119DA-63E6-4BE0-94FD-A6001B4D4A11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F92119DA-63E6-4BE0-94FD-A6001B4D4A11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37576C67-7712-465B-AC7D-0B5B9342868D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37576C67-7712-465B-AC7D-0B5B9342868D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37576C67-7712-465B-AC7D-0B5B9342868D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37576C67-7712-465B-AC7D-0B5B9342868D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
