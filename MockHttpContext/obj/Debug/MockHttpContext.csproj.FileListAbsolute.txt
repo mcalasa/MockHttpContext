@@ -1,0 +1,5 @@
+C:\Projects\DotNet\MockHttpContext\MockHttpContext\bin\Debug\MockHttpContext.dll
+C:\Projects\DotNet\MockHttpContext\MockHttpContext\bin\Debug\MockHttpContext.pdb
+C:\Projects\DotNet\MockHttpContext\MockHttpContext\obj\Debug\MockHttpContext.csprojResolveAssemblyReference.cache
+C:\Projects\DotNet\MockHttpContext\MockHttpContext\obj\Debug\MockHttpContext.dll
+C:\Projects\DotNet\MockHttpContext\MockHttpContext\obj\Debug\MockHttpContext.pdb
