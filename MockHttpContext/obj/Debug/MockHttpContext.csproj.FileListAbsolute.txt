@@ -3,3 +3,12 @@ C:\Projects\DotNet\MockHttpContext\MockHttpContext\bin\Debug\MockHttpContext.pdb
 C:\Projects\DotNet\MockHttpContext\MockHttpContext\obj\Debug\MockHttpContext.csprojResolveAssemblyReference.cache
 C:\Projects\DotNet\MockHttpContext\MockHttpContext\obj\Debug\MockHttpContext.dll
 C:\Projects\DotNet\MockHttpContext\MockHttpContext\obj\Debug\MockHttpContext.pdb
+C:\Projects\MockHttpContext\MockHttpContext\obj\Debug\MockHttpContext.dll
+C:\Projects\MockHttpContext\MockHttpContext\obj\Debug\MockHttpContext.pdb
+C:\Projects\MockHttpContext\MockHttpContext\bin\Debug\MockHttpContext.dll
+C:\Projects\MockHttpContext\MockHttpContext\bin\Debug\MockHttpContext.pdb
+C:\Projects\MockHttpContext\MockHttpContext\bin\Debug\Castle.Core.dll
+C:\Projects\MockHttpContext\MockHttpContext\bin\Debug\Moq.dll
+C:\Projects\MockHttpContext\MockHttpContext\bin\Debug\Castle.Core.xml
+C:\Projects\MockHttpContext\MockHttpContext\bin\Debug\Moq.xml
+C:\Projects\MockHttpContext\MockHttpContext\obj\Debug\MockHttpContext.csprojResolveAssemblyReference.cache
