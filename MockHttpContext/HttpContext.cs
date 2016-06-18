@@ -14,28 +14,16 @@ namespace MockHttpContext
         private Mock<HttpRequestBase> _mockRequest;
         private HttpSessionStateBase _mockSession;
         private Mock<HttpContextBase> _mockHttpContext;
-        private string _queryStringValue;
-        private string _userIdentityName;
-        private string _sessionUserRole;
+        private UserContext _userContext;
 
-        public HttpContext(string queryStringValue, string userIdentityName, string sessionUserRole) : this(queryStringValue, userIdentityName) 
-        {                      
-            _sessionUserRole = sessionUserRole;           
-        }
-
-        public HttpContext(string queryStringValue, string userIdentityName) : this(userIdentityName)
+        public HttpContext(UserContext userContext)
         {
-            _queryStringValue = queryStringValue;
-        }
-
-        public HttpContext(string userIdentityName)
-        {
-            _userIdentityName = userIdentityName;
+            _userContext = userContext;
         }
 
         public HttpContextBase CurrentHttpContext()
         {
-            var queryString = new System.Collections.Specialized.NameValueCollection { { "qsValue", _queryStringValue } };
+            var queryString = new System.Collections.Specialized.NameValueCollection { { _userContext.SessionNames.QueryString , _userContext.QueryString } };
 
             _mockRequest = new Mock<HttpRequestBase>();
             _mockSession = new HttpSession();
@@ -44,10 +32,10 @@ namespace MockHttpContext
             _mockHttpContext = new Mock<HttpContextBase>();
                         
             _mockHttpContext.Setup(c => c.Request).Returns(_mockRequest.Object);
-            _mockHttpContext.Setup(c => c.Request.RequestContext.HttpContext.User.Identity.Name).Returns(_userIdentityName);
+            _mockHttpContext.Setup(c => c.Request.RequestContext.HttpContext.User.Identity.Name).Returns(_userContext.Username);
             _mockHttpContext.Setup(c => c.Request.QueryString).Returns(queryString);
-            _mockHttpContext.Setup(c => c.Session["UserRole"]).Returns(_sessionUserRole);
-            _mockHttpContext.Setup(c => c.Request.RequestContext.HttpContext.Session["LoggedInUser"]).Returns(_userIdentityName);
+            _mockHttpContext.Setup(c => c.Session[_userContext.SessionNames.UserRole]).Returns(_userContext.UserRole);
+            _mockHttpContext.Setup(c => c.Request.RequestContext.HttpContext.Session[_userContext.SessionNames.LoggedInUser]).Returns(_userContext.Username);
 
             return _mockHttpContext.Object;
         }

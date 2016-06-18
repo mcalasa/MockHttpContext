@@ -12,7 +12,7 @@ namespace MockHttpContext.Tests.Tests
         [Fact]
         public void ReturnUsernameFromIdentityPropertyTest()
         {            
-            var mockedHttpContext = new HttpContext(@"contoso\bob");
+            var mockedHttpContext = new HttpContext(new UserContext(@"contoso\bob"));
             
             Assert.Equal(@"contoso\bob", mockedHttpContext.CurrentHttpContext().Request.RequestContext.HttpContext.User.Identity.Name);                      
         }
@@ -20,16 +20,18 @@ namespace MockHttpContext.Tests.Tests
         [Fact]
         public void ReturnQueryStringValue()
         {
-            var mockedHttpContext = new HttpContext("SomeQueryStringValue", @"contoso\bob");
+            var sessionNames = new SessionName("qsValue", "UserRole", "LoggedInUser");
+            var mockedHttpContext = new HttpContext(new UserContext(sessionNames, @"contoso\bob", "SomeQueryStringValue", "Admin"));
 
-            Assert.Equal("SomeQueryStringValue", mockedHttpContext.CurrentHttpContext().Request.QueryString["qsValue"]);
+            Assert.Equal("SomeQueryStringValue", mockedHttpContext.CurrentHttpContext().Request.QueryString[sessionNames.QueryString]);
         }
 
         [Fact]
         public void ReturnSessionValue()
         {
-            var mockedHttpContext = new HttpContext("SomeQueryStringValue", @"contoso\bob", "Admin");
-            
+            var sessionNames = new SessionName("qsValue", "UserRole", "LoggedInUser");
+            var mockedHttpContext = new HttpContext(new UserContext(sessionNames, @"contoso\bob", "SomeQueryStringValue", "Admin"));
+
             Assert.Equal("Admin", (string)mockedHttpContext.CurrentHttpContext().Session["UserRole"]);
         }
     }

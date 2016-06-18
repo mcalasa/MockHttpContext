@@ -51,6 +51,8 @@
     <Compile Include="HttpContext.cs" />
     <Compile Include="HttpSession.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SessionName.cs" />
+    <Compile Include="UserContext.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

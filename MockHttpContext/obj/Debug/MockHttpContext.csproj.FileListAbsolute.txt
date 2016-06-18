@@ -11,4 +11,3 @@ C:\Projects\MockHttpContext\MockHttpContext\bin\Debug\Castle.Core.dll
 C:\Projects\MockHttpContext\MockHttpContext\bin\Debug\Moq.dll
 C:\Projects\MockHttpContext\MockHttpContext\bin\Debug\Castle.Core.xml
 C:\Projects\MockHttpContext\MockHttpContext\bin\Debug\Moq.xml
-C:\Projects\MockHttpContext\MockHttpContext\obj\Debug\MockHttpContext.csprojResolveAssemblyReference.cache
