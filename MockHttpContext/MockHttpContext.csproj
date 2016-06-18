@@ -53,6 +53,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SessionName.cs" />
     <Compile Include="UserContext.cs" />
+    <Compile Include="UserContextValue.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
