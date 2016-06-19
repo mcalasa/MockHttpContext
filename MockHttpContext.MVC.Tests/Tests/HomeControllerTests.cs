@@ -22,10 +22,13 @@ namespace MockHttpContext.MVC.Tests.Tests
             var sessionNames = new SessionName("qsValue", "UserRole", "LoggedInUser");
 
             //Setup the context
-            var mockedHttpContext = new HttpContext(new UserContext(sessionNames, new UserContextValue(@"contoso\bob", "SomeQueryStringValue", "Admin")));
+            var mockedHttpContext = new HttpContext(
+                                        new UserContext(sessionNames, 
+                                            new UserContextValue(@"contoso\bob", "SomeQueryStringValue", "Admin")));
 
             //Pass the mocked context to the controller
-            controller.ControllerContext = new ControllerContext(mockedHttpContext.CurrentHttpContext(), new System.Web.Routing.RouteData(), controller);
+            controller.ControllerContext = new ControllerContext(mockedHttpContext.CurrentHttpContext(), 
+                                                new System.Web.Routing.RouteData(), controller);
 
             Assert.Equal("SomeQueryStringValue", controller.Request.QueryString[sessionNames.QueryString]);            
         }
