@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MockHttpContext.WebForm", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MockHttpContext.WebForm.Tests", "MockHttpContext.WebForm.Tests\MockHttpContext.WebForm.Tests.csproj", "{F92119DA-63E6-4BE0-94FD-A6001B4D4A11}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MockHttpContext.WebForm.Presenters", "MockHttpContext.WebForm.Presenters\MockHttpContext.WebForm.Presenters.csproj", "{37576C67-7712-465B-AC7D-0B5B9342868D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MockHttpContext.WebForm.Logic", "MockHttpContext.WebForm.Logic\MockHttpContext.WebForm.Logic.csproj", "{27BBE9CD-785D-48B5-9E86-2B36766ECF4F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,10 +47,10 @@ Global
 		{F92119DA-63E6-4BE0-94FD-A6001B4D4A11}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F92119DA-63E6-4BE0-94FD-A6001B4D4A11}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F92119DA-63E6-4BE0-94FD-A6001B4D4A11}.Release|Any CPU.Build.0 = Release|Any CPU
-		{37576C67-7712-465B-AC7D-0B5B9342868D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{37576C67-7712-465B-AC7D-0B5B9342868D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{37576C67-7712-465B-AC7D-0B5B9342868D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{37576C67-7712-465B-AC7D-0B5B9342868D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27BBE9CD-785D-48B5-9E86-2B36766ECF4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27BBE9CD-785D-48B5-9E86-2B36766ECF4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27BBE9CD-785D-48B5-9E86-2B36766ECF4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27BBE9CD-785D-48B5-9E86-2B36766ECF4F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
