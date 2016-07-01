@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MockHttpContext.WebForm.Logic.Views
 {
-    interface ILoginView
+    public interface ILoginView
     {
     }
 }
