@@ -73,12 +73,6 @@
   <ItemGroup>
     <Folder Include="Tests\" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\MockHttpContext.WebForm.Presenters\MockHttpContext.WebForm.Presenters.csproj">
-      <Project>{37576c67-7712-465b-ac7d-0b5b9342868d}</Project>
-      <Name>MockHttpContext.WebForm.Presenters</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

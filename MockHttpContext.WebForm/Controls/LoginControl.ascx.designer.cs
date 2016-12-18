@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MockHttpContext.WebForm
+namespace MockHttpContext.WebForm.Controls
 {
 
 
-    public partial class Default
+    public partial class LoginControl
     {
     }
 }

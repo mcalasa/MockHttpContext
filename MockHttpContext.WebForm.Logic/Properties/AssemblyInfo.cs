@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("MockHttpContext.WebForm.Presenters")]
+[assembly: AssemblyTitle("MockHttpContext.WebForm.Logic")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Houlihan Lokey")]
-[assembly: AssemblyProduct("MockHttpContext.WebForm.Presenters")]
+[assembly: AssemblyProduct("MockHttpContext.WebForm.Logic")]
 [assembly: AssemblyCopyright("Copyright © Houlihan Lokey 2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("070a6114-61ca-43ef-9fa6-44f99a397add")]
+[assembly: Guid("8715ebe6-0247-49cd-aace-fbe291b5a80c")]
 
 // Version information for an assembly consists of the following four values:
 //
